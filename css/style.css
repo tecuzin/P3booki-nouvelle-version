@@ -13,6 +13,14 @@
     color: var(--main-color);
 }
 
+.boutons-filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -99,6 +107,7 @@ h1 {
     flex-direction: row;
     margin-top: 35px;
     margin-bottom: 35px;
+    justify-content: center;
 }
 
 .fa-location-dot {
@@ -115,14 +124,11 @@ h1 {
 
 input {
     width: 332px;
-    height: 49px;
-    top: 199px;
-    left: 55px;
+    height: 40px;
     font-weight: 700;
-    border: 1px;
-    border-radius: 15px;
+    border-top: 1px #999999 solid;
+    border-bottom: 1px #999999 solid;
     border-width: 1px;
-    color: #000000;
     font-size: 18px;
     text-align: left;
     padding-left: 15px;
@@ -162,6 +168,7 @@ button {
 .barre-filtre {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     max-width: 1440px;
     font-size: 18px;
     font-weight: 700;
@@ -666,10 +673,10 @@ a {
 
     form {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: left;
         justify-content: center;
-        width: 100%;
     }
 
     h1 {
@@ -685,7 +692,7 @@ a {
     }
 
     input {
-        display:flex;
+        display: flex;
         width: unset;
         flex-wrap: nowrap;
 
